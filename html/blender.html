@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/blender.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="left">
+                <img src="data:image/png;base64,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" alt="" class="gibby">
+            </div>
+            <div class="right">
+                <div class="links">
+                    <a href="">Features</a>
+                    <a href="">Download</a>
+                    <a href="">Support</a>
+                    <a href="">Get Involved</a>
+                    <a href="">About</a>
+                    <a href="">Jobs</a>
+                    <button class="donate">
+                        <i class="bi bi-heart heart"></i>
+                        Donate
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-features">
+                <h1>Blender 4.2 LTS</h1>
+                <p>Packed with features and improvements ready to power your <br> projects for the next two years.</p>
+                <div class="btn">
+                    <button class="download">Download</button>
+                    <button class="new">What's New</button>
+                </div>
+            </div>
+        </div>
+        <div class="news-section">
+            <h1>Latest News</h1>
+            <div class="news">
+                <div class="news1">
+                    <div class="box1">
+                        <img src="https://www.blender.org/wp-content/uploads/2024/08/bcon24_thumbnail_2_1.webp" alt="">
+                    </div>
+                    <h4>EVENTS</h4>
+                    <p>BCON24 Call for Content</p>
+                </div>
+                <div class="news2">
+                    <div class="box2">
+                        <img src="https://www.blender.org/wp-content/uploads/2024/08/annual_report_23_2_1.webp" alt="" class="">
+                    </div>
+                    <h4>BLENDER FOUNDATION</h4>
+                    <p>2023 Annual Report</p>
+                </div>
+            </div>
+        </div>
+        <div class="blenderstudio">
+            <h1>Blender Studio</h1>
+            <div class="studio">
+                <div class="studio1">
+                    <div class="box4">
+                        <img src="https://ddz4ak4pa3d19.cloudfront.net/cache/5e/c4/5ec431226262bc76ca4a87d71721cf98.jpg" alt="" class="imago">
+                    </div>
+                    <p>Wing It! A Lesson in the Mix of Layout and Previs</p>
+                    <h3>Director of Animation Hjalti shares his knowledge and experience on layout and previs, key steps in productions.</h3>
+                </div>
+                <div class="studio2">
+                    <div class="box5">
+                        <img src="https://ddz4ak4pa3d19.cloudfront.net/cache/6e/34/6e341235ae697ba82105512f7a613ba0.jpg" alt="" class="imago">
+                    </div>
+                    <p>New Geometry Nodes Features in Blender 4.2</p>
+                    <h3>Two videos presenting the biggest new features for Geometry Nodes in Blender 4.2</h3>
+                </div>
+                <div class="studio3">
+                    <div class="box5">
+                        <img src="https://ddz4ak4pa3d19.cloudfront.net/cache/69/f3/69f3c98d062749e16f7bf06362b44879.jpg" alt="" class="imago">
+                    </div>
+                    <p>Creating the Bcon 2023 Festival Interstitials</p>
+                    <h3>Take a look behind the process of developing the Blender Conference 2023 festival interstitials.</h3>
+                </div>
+                <div class="studio4">
+                    <div class="box6">
+                        <img src="https://ddz4ak4pa3d19.cloudfront.net/cache/8b/60/8b607b41b7e56897a215a082d242e24c.jpg" alt="" class="imago">
+                    </div>
+                    <p>Baby Suzanne in Grease Pencil</p>
+                    <h3>A cute test of Grease Pencil 3.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="blenderstudio">
+            <h1>Blender Development</h1>
+            <div class="studio">
+                <div class="studio1">
+                    <div class="box4">
+                        <img src="https://code.blender.org/wp-content/uploads/2024/07/eevee_next_thumbnail-480x270.jpg" alt="" class="imago">
+                    </div>
+                    <p>EEVEE Next Generation in Blender 4.2 LTS</p>
+                    <h3>The next major iteration on the Blender viewport system is available in Blender. 4.2 LTS.</h3>
+                </div>
+                <div class="studio2">
+                    <div class="box5">
+                        <img src="https://code.blender.org/wp-content/uploads/2024/06/brush_assets_2024-480x270.jpg" alt="" class="imago">
+                    </div>
+                    <p>Brush Assets is out!</p>
+                    <h3>Brush Assets is merged into Blender and ready for the upcoming 4.3 release.</h3>
+                </div>
+                <div class="studio3">
+                    <div class="box5">
+                        <img src="https://code.blender.org/wp-content/uploads/2024/06/Group-1-480x270.jpg" alt="" class="imago">
+                    </div>
+                    <p>Blender 4.2 LTS Beta</p>
+                    <h3>Public call for testing Blender 4.2 LTS Beta. Let’s make it a rock solid release!</h3>
+                </div>
+                <div class="studio4">
+                    <div class="box6">
+                        <img src="https://code.blender.org/wp-content/uploads/2024/08/online_assets_boring_centralized-480x270.jpg" alt="" class="imago">
+                    </div>
+                    <p>Online Assets Workshop Report</p>
+                    <h3>Remote Asset Libraries design and improvements on assets organization.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="source">
+            <div class="free">
+                <h1>Free and Open Source</h1>
+                <p>Blender is a public project hosted on blender.org, licensed as GNU GPL, owned by its contributors.</p>
+                <div class="freep">
+                    <p>For that reason Blender is Free and Open Source software, forever.</p>
+                    <button class="learnmore">Learn more</button>
+                </div>
+            </div>
+            <div class="open">
+                <img src="https://www.blender.org/wp-content/uploads/2021/08/blender_fund_hex-e1629996297522.png" alt="">
+            </div>
+        </div>
+        <div class="industry">
+            <div class="part">
+                <h1>Part of the industry</h1>
+                <p>Blender is a member of ASWF, Khronos, Linux Foundation and OIN. It’s also well supported by major hardware vendors such as AMD, Apple, Intel, and NVIDIA</p>
+            </div>
+            <div class="industry-pics">
+                <img src="https://www.blender.org/wp-content/uploads/2021/10/khronos.png" alt="">
+                <img src="https://www.blender.org/wp-content/uploads/2021/10/linux_foundation.png" alt="">
+                <img src="https://www.blender.org/wp-content/uploads/2021/10/open_invention_network.png" alt="">
+                <img src="https://www.blender.org/wp-content/uploads/2021/10/academy_software_foundation.png" alt="">
+            </div>
+        </div>
+        <div class="people">
+            <div class="partis">
+                <h1>It’s about people.</h1>
+                <p>Designers, developers, engineers, artists. All driven by passion. All using Blender to make an impact.</p>
+            </div>
+            <div class="people-pics">
+                <div class="pab">
+                    <img src="https://www.blender.org/wp-content/uploads/2021/10/blender_today_pablo.jpg" alt="" class="pablo">
+                    <p>Connecting Blender Community</p>
+                </div>
+                <div class="pab">
+                    <img src="https://www.blender.org/wp-content/uploads/2021/10/daniel_martinez_lara_annecy.jpg" alt="" class="pablo">
+                    <p>Showcasing Blender at industry events</p>
+                </div>
+                <div class="pab">
+                    <img src="https://www.blender.org/wp-content/uploads/2021/10/creating_worlds_ian_hubert.jpg" alt="" class="pablo">
+                    <p>Creating Worlds at BCON19</p>
+                </div>
+                <div class="pab">
+                    <img src="https://www.blender.org/wp-content/uploads/2021/10/nodevember.jpg" alt="" class="pablo">
+                    <p>The demo scene is back with Nodevember</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="ecosystem">
+            <div class="eco">
+                <h1>The Ecosystem</h1>
+                <p>Countless communities and thriving businesses are built around Blender.</p>
+                <div class="freepy">
+                    <p>Together, these tutorial makers and content creators, add-on developers and global marketplaces form an ever-expanding ecosystem.</p>
+                    <p>Find Blender Communities</p>
+                </div>
+            </div>
+            <div class="opening">
+            </div>
+        </div>
+        <div class="everything">
+            <h1>Everything You Need</h1>
+        </div>
+        <div class="flip-all">
+            <div class="flip">
+                <div class="engine">
+                    <h2>Cycles Render Engine</h2>
+                    <p>Cycles is Blender’s built-in powerful unbiased path-tracer engine that offers stunning ultra-realistic rendering.</p>
+                    <ul class="li">
+                        <li>Real-time viewport preview</li>
+                        <li>CPU & GPU rendering</li>
+                        <li>PBR shaders & HDR lighting support</li>
+                        <li>VR rendering support</li>
+                    </ul>
+                </div>
+                <div class="engine-pic">
+                    <img src="https://www.blender.org/wp-content/uploads/2019/07/blender_render-1280x720.jpg?x12104" alt="">
+                </div>
+            </div>
+            <div class="flip2">
+                <div class="engine-pic2">
+                    <img src="https://www.blender.org/wp-content/uploads/2019/07/modeling02-1280x720.jpg?x12104" alt="">
+                </div>
+                <div class="engine2">
+                    <h2>Modeling, Sculpt, UV</h2>
+                    <p>Blender’s comprehensive array of modeling tools make creating, transforming and editing your models a breeze.</p>
+                    <ul class="li2">
+                        <li>Full N-Gon support</li>
+                        <li>Edge slide, inset, grid and bridge fill, and more</li>
+                        <li>Advanced sculpting tools and brushes</li>
+                        <li>Multi-resolution and Dynamic subdivision</li>
+                        <li>3D painting with textured brushes and masking</li>
+                        <li>Python scripting for custom tools and add-ons</li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="flip">
+                <div class="engine">
+                    <h2>VFX</h2>
+                    <p>VFX professionals say: “Probably the best tracker in the market”. Blender includes production ready camera and object tracking. Allowing you to import raw footage, track the footage, mask areas and see the camera movements live in your 3D scene. Eliminating the need to switch between programs</p>
+                    <ul class="li">
+                        <li>Auto and Manual tracking</li>
+                        <li>Powerful camera reconstruction</li>
+                        <li>Real-time preview of your tracked footage and 3D scene</li>
+                        <li>Support for Planar tracking and Tripod solvers</li>
+                    </ul>
+                </div>
+                <div class="engine-pic">
+                    <img src="https://www.blender.org/wp-content/uploads/2019/07/blender_vfx-1280x720.jpg?x12104" alt="">
+                </div>
+            </div>
+            <div class="flip2">
+                <div class="engine-pic2">
+                    <img src="https://www.blender.org/wp-content/uploads/2019/07/animation01-1280x720.jpg?x12104" alt="">
+                </div>
+                <div class="engine2">
+                    <h2>Animation & Rigging</h2>
+                    <p>Thanks to the high quality rigging and animation tools, Blender is being used for numerous short films, advertisements, TV series and feature films now.</p>
+                    <ul class="li2">
+                        <li>Envelope, skeleton and automatic skinning</li>
+                        <li>B-spline interpolated bones</li>
+                        <li>Curve editor and dope sheets</li>
+                        <li>Custom bone shapes for fast input</li>
+                        <li>Sound synchronization</li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="flip">
+                <div class="engine">
+                    <h2>Story Art, Drawing 2D in 3D</h2>
+                    <p>Really! Drawing directly in a 3D viewport makes a lot of sense. It opens unsurpassed workflow freedom for story-boarders and 2D artists.</p>
+                    <ul class="li">
+                        <li>Combine 2D with 3D right in the viewport</li>
+                        <li>Full Animation Support with Onion Skinning</li>
+                        <li>Layers & Colors for Stroke and Fill</li>
+                        <li>Sculpt brush strokes & Parent to 3D objects</li>
+                    </ul>
+                </div>
+                <div class="engine-pic">
+                    <img src="https://www.blender.org/wp-content/uploads/2019/07/hero_p31_screenshot-1280x720.jpg?x12104" alt="">
+                </div>
+            </div>
+            <div class="flip2">
+                <div class="engine-pic2">
+                    <img src="https://www.blender.org/wp-content/uploads/2019/07/vse_custom_grade-1280x720.jpg?x12104" alt="">
+                </div>
+                <div class="engine2">
+                    <h2>Make it Your Own</h2>
+                    <p>Blender has a flexible Python controlled interface. Layout, colors, size and even fonts can be adjusted. Use hundreds of add-ons by the community or create your own using Blender’s accessible Python API.</p>
+                    <ul class="li2">
+                        <li>Customize the interface layout and colors</li>
+                        <li>Hi-res/Retina screen support</li>
+                        <li>Create your own tools and add-ons</li>
+                        <li>Draw over the OpenGL viewport</li>
+                        <li>Connect with Blender’s Render API</li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="create">
+                <p>The Freedom to Create.</p>
+                <button>Download Blender</button>
+            </div>
+
+        </div>
+        <div class="tablet">
+            <div class="combine">
+                
+            <div class="table-con">
+                <div class="gap">
+                    <h6>Download</h6>
+                    <p>Latest Blender</p>
+                    <p>Blender LTS</p>
+                    <p>Blender Benchmark</p>
+                    <p>Previous Versions</p>
+                    <p>Experimental Builds</p>
+                    <p>Source Code</p>
+                    <p>Release Notes</p>
+                    <p>Requirements</p>
+                    <h6>Organization</h6>
+                    <p>People</p>
+                    <p>Jobs</p>
+                </div>
+                <div class="gap">
+                    <h6>About</h6>
+                    <p>Blender Foundation</p>
+                    <p>Blender Institute</p>
+                    <p>Blender Studio</p>
+                    <p>License</p>
+                    <p>Logo & Trademark</p>
+                    <p>Credits</p>
+                    <p>Privacy Policy</p>
+                    <h6>Articles</h6>
+                    <p>News</p>
+                    <p>Press Releases</p>
+                    <p>User Stories</p>
+                </div>
+                <div class="gap">
+                    <h6>Get Involved</h6>
+                    <p>Dashboard</p>
+                    <p>Development</p>
+                    <p>Documentation</p>
+                    <p>Education</p>
+                    <h6>Donate</h6>
+                    <p>Development Fund</p>
+                    <p>One-time Donations</p>
+                    <h6>Blender Studio</h6>
+                    <p>Films</p>
+                    <p>Training</p>
+                </div>
+                <div class="gap">
+                    <h6>Developers</h6>
+                    <p>Get Started</p>
+                    <p>Projects</p>
+                    <p>Docs</p>
+                    <p>Blog</p>
+                    <p>Forum</p>
+                    <p>Python API</p>
+                    <h6>Support</h6>
+                    <p>Manual</p>
+                    <p>Community</p>
+                    <p>FAQ</p>
+                    <h6>Blender Conference</h6>
+
+                </div>       
+            </div>
+            <div class="icons">
+                <h6>Follow Blender</h6>
+                <div class="icons-all">
+                    <i class="bi bi-youtube"></i>
+                    <p>YouTube</p>
+                </div>
+                <div class="icons-all2">
+                    <i class="bi bi-twitter-x"></i>
+                    <p>X</p>
+                </div>
+                <div class="icons-all3">
+                    <i class="bi bi-instagram"></i>
+                    <p>Instagram</p>
+                </div>
+                <div class="icons-all4">
+                    <i class="bi bi-facebook"></i>
+                    <p>Facebook</p>
+                </div>
+                <div class="icons-all5">
+                    <i class="bi bi-linkedin"></i>
+                    <p>LinkedIn</p>
+                </div>
+                <div class="icons-all6">
+                    <i class="bi bi-mastodon"></i>
+                    <p>Mastodon</p>
+                </div>
+            </div>
+        </div>
+            <div class="artistic">
+                <p>Artistic freedom starts with Blender</p>
+                <i class="bi bi-heart heart"></i>
+                <p>The Free and Open Source 3D Creation Suite</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

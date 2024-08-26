@@ -1,0 +1,958 @@
+:root{
+    --font-family-best: "Heebo",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Oxygen,Ubuntu,Cantarell,"Open Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.container{
+    font-family: var(--font-family-best);
+    /* border: 10px solid red; */
+    /* max-width: 100%; */
+    /* max-width: 1536px; */
+    /* padding: 0 20px; */
+    /* background: red; */
+    /* padding-left: -400px; */
+    padding-right: 70px;
+    /* margin: 0 auto;  */
+    overflow: hidden;
+    position: relative;
+    /* justify-content: center; */
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    cursor: pointer;
+    overflow: hidden; 
+    position:  fixed;
+    background: white; 
+    z-index: 999;
+}
+.left{
+    margin-left: 100px;
+    overflow: hidden;
+}
+.left>img{
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.right{
+    display: flex;
+    margin-right: 100px;
+    gap: 20px;
+}
+.links{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    
+}
+a{
+    color: rgba(0, 0, 0, 0.692);
+    transition: all ease-in-out;
+}
+a:hover{
+    color: rgba(0, 82, 255, .3);
+}
+.donate{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgba(0, 81, 255, 0.555);
+    color: white;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+.donate:hover{
+    background-color: rgba(0, 81, 255, 0.418);
+}
+.hero{
+    width: 120%;
+    height: 600px;
+    background-image: url(../blend5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: center;
+    margin-left: -20px;
+    padding: 0;
+    margin-top: 70px;
+}
+.hero-features{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    padding-left: 150px;
+    padding-top: 300px;
+
+}
+.hero-features>h1{
+    font-weight:700;
+    font-size: 90px;
+    font-family: var(--font-family-best);
+}
+.hero-features>p{
+    font-size: 25px;
+    font-weight: 400;
+}
+.btn{
+    display: flex;
+    gap: 10px;
+}
+.download{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(34, 32, 34);
+    background-color: rgb(202, 185, 185);
+    border: none;
+    cursor: pointer;
+}
+.new{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(43, 19, 43);
+    border: none;
+    cursor: pointer;
+}
+.new:hover{
+    background-color: rgba(255, 255, 255, 0.425);
+
+}
+.news-section{
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    color: #4c4d52;
+    gap: 10px;
+    padding-left: 100px;
+     cursor: pointer;
+}
+.news-section>h1:hover{
+    margin-left: 2000px;
+    text-decoration: underline;
+    display: block;
+}
+.news{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #4c4d52;
+}
+.news1,.news2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.news1>p,.news2>p{
+    display: flex;
+    font-size: 25px;
+    flex-direction: column;
+    gap: 10px;
+}
+.box1>img{
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+.box1>img:hover{
+    transform: scale(1.1);
+}
+
+.box2>img{
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+.box2>img:hover{
+    transform: scale(1.1);
+}
+.studio>img{
+    width: 200px;
+    height: 100px;
+}
+.blenderstudio{
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    gap: 10px;
+    color: #4c4d52;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 100px;
+    cursor: pointer;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.blenderstudio>h1:hover{
+    text-decoration: underline;
+
+
+}
+.studio{
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    justify-content: center;
+    /* align-items: center; */
+    
+}
+.imago{
+    width: 290px;
+    height: 170px;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+.imago:hover{
+    transform: scale(1.1);   
+}
+/* .studio1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} */
+.studio1>p,.studio2>p,.studio3>p,.studio4>p{
+    font-size: 22px;
+
+}
+.studio1>h3,.studio2>h3,.studio3>h3,.studio4>h3{
+    font-size: 19px;
+}
+.studio1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.studio2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.studio3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.studio4{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.source-section{
+    background: blue;
+    padding-top: 200px;
+}
+.source{
+    display: flex;
+    background-color: rgb(22, 7, 7);
+    color: white;
+    width: 87%;
+    height: 400px;
+    margin-top: 200px;
+    margin-left: 100px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.free{
+    /* flex: 3; */
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-left: 50px;
+    /* padding-top: 50px; */
+}
+.free>h1{
+    color: rgb(168, 179, 168);
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "Heebo",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Oxygen,Ubuntu,Cantarell,"Open Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.free>p{
+    font-size: 21px;
+    color: rgba(230, 216, 216, 0.979);
+    font-weight: 500;
+
+}
+.freep{
+    display: flex;
+    padding-top: 30px;
+    font-size: 20px;
+    color: rgba(219, 204, 204, 0.979);
+    font-weight: 500;
+}
+.open{
+    /* flex: 1; */
+    padding-bottom: 100px;
+    margin-left: 40px;
+}
+.open>img{
+    width: 150px;
+    height: 200px;
+}
+.learnmore{
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    font-size: 20px;
+    color: rgba(226, 208, 208, 0.979);
+    font-weight: 400;
+    cursor: pointer;
+    
+}
+.industry{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f7ff;;
+    color: black;
+    width: 87%;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.part{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.part>h1{
+    color: rgba(54, 54, 235, 0.842);
+    font-size: 70px;
+    font-weight: 700;
+    font-family: "Heebo",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Oxygen,Ubuntu,Cantarell,"Open Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.part>p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.76);
+    font-weight: 500;
+    padding-right: 20px;
+}
+.industry-pics{
+    padding-top: 50px;
+    padding-left: 50px;
+    display: flex;
+    gap: 50px;
+    cursor: pointer;
+}
+.industry-pics>img{
+    width: 200px ;
+    height: 70px;
+    padding-left: 30px;
+}
+.people{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f7ff;
+    color: black;
+    width: 87%;
+    height: 700px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 15px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.partis{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-left: -200px;
+    padding-top: 50px;
+}
+.partis>h1{
+    color: rgba(54, 54, 235, 0.726);
+    font-size: 70px;
+    font-weight: 700;
+    font-family: "Heebo",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Oxygen,Ubuntu,Cantarell,"Open Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.partis>p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.76);
+    font-weight: 500;
+    padding-right: 20px;
+}
+.people-pics{
+    padding-top: 50px;
+    padding-left: 50px;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+.pab{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+.pab>img{
+    width: 250px;
+    height: 90%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 2s;
+}
+.pab>img:hover{
+    transform: scale(1.1);
+}
+.pab>p{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.76);
+    font-weight: 400;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.ecosystem{
+    display: flex;
+    background-image: url(https://www.blender.org/wp-content/uploads/2020/11/bcon20_todos-1536x703.jpg);
+    /* background-color: linear-gradient(90deg, rgb(1, 1, 26) 0%, rgb(15, 70, 165) 100%); */
+    color: #f2f7ff;
+    /* background: linear-gradient(90deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%); */
+    /* color: inherit; */
+    width: 87%;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.eco{
+    flex: 3;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-left: 50px;
+    /* padding-top: 50px; */
+}
+.eco>h1{
+    font-size: 70px;
+    font-weight: 700;
+    font-family: "Heebo",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Oxygen,Ubuntu,Cantarell,"Open Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.eco>p{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.freepy{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    gap: 10px;
+}
+.freepy>p:nth-child(2){
+    text-decoration: underline;
+    cursor: pointer;
+}
+.opening{
+    flex: 1;
+    padding-top: 100px;
+    /* margin-left: 300px; */
+}
+.everything>h1{
+    display: flex;
+    margin-left: 130px;
+    color: #4c4d52;
+    margin-top: 50px;
+    font-size: 80px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Heebo",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Oxygen,Ubuntu,Cantarell,"Open Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";   
+}
+.everything>h1:hover{
+    text-decoration: underline;
+
+}
+.flip-all{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.flip{
+    display: flex;
+    margin-left: 130px;
+}
+.engine{
+    flex: 2;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.engine>h2{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.658);
+    font-weight: 600;
+    padding-right: 20px;
+}
+.engine>p{
+    font-size: 29px;
+    color: rgba(0, 0, 0, 0.63);
+    font-weight: 400;
+    padding-right: 20px;
+}
+.li{
+    font-size: 29px;
+    color: rgba(0, 0, 0, 0.61);
+    font-weight: 400;
+    padding-left: 30px;
+    text-decoration: dashed;
+
+}
+.engine-pic{
+    display: flex;
+    flex: 1;
+    padding-right: 150px;
+    padding-top: 120px;
+    cursor: pointer;
+    transition: all 2s;
+}
+.engine-pic>img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 550px;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+.engine-pic>img:hover{
+    transform: scale(1.1);
+}
+.flip2{
+    display: flex;
+}
+.engine2{
+    flex: 2;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-right: 170px;
+    overflow: hidden;
+}
+.engine2>h2{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.658);
+    font-weight: 600;
+    /* padding-left: 20px; */
+}
+.engine2>p{
+    font-size: 29px;
+    color: rgba(0, 0, 0, 0.63);
+    font-weight: 400;
+    /* padding-left: 20px; */
+}
+.li2{
+    font-size: 29px;
+    color: rgba(0, 0, 0, 0.61);
+    font-weight: 400;
+    padding-left: 20px;
+    text-decoration: dashed;
+
+}
+.engine-pic2{
+    display: flex;
+    flex: 1;
+    padding-top: 120px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.engine-pic2>img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 550px;
+    border-radius: 10px;
+    transition: all 2s;
+}
+.engine-pic2>img:hover{
+    transform: scale(1.1);
+}
+.create{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.create>p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.63);
+    font-weight: 500;
+}
+.create>button{
+    height: 35px;
+    width: 250px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgba(0, 81, 255, 0.555);
+    color: white;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+.create>button:hover{
+    background-color: rgba(0, 81, 255, 0.418);
+}
+.tablet{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.952);
+    margin-top: 30px;
+    color: white;
+    padding-top: 50px;
+    padding-left: 100px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+.combine{
+    display: flex;
+    /* gap: 200px; */
+    border-spacing: 30px;
+    /* padding: 200px; */
+    justify-content: space-around;
+    border-spacing: 40px;
+}
+.table-con{
+    display: flex;
+    /* flex: 5; */
+    gap: 70px;
+    border-spacing: 30px;
+    /* padding: 200px; */
+    justify-content: space-around;
+    border-spacing: 40px;
+    /* cursor: pointer; */
+    /* gap: 500px; */
+
+}
+.gap>h6{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.548);
+    padding-top: 20px;
+    cursor: pointer;
+}
+.gap>h6:hover{
+    text-decoration: underline;
+}
+.gap>p{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.548);
+    line-height: 1.5rem;
+    cursor: pointer;
+    /* font-weight: 300; */
+}
+.gap>p:hover{
+    text-decoration: underline;
+}
+.icons{
+    display: flex;
+    /* flex: 1; */
+    flex-direction: column;
+    margin-right: 180px;
+    padding-top: 20px;
+    border-color: blue;
+    border-left: 1px solid rgba(255, 255, 255, 0.548);
+    color: rgba(255, 255, 255, 0.548);
+    /* cursor: pointer; */
+}
+.icons>h6{
+    margin-left: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.548);
+    /* padding-top: 20px; */
+    cursor: pointer;
+}
+.icons-all{
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+}
+.icons-all:hover{
+    color: red;
+}
+.icons-all2{
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+}
+.icons-all2:hover{
+    color: rgb(31, 138, 180);
+}
+.icons-all3{
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+}
+.icons-all3:hover{
+    color: rgb(167, 19, 44);
+}
+.icons-all4{
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+}
+.icons-all4:hover{
+    color: rgba(132, 32, 219, 0.938);
+}
+.icons-all5{
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+}
+.icons-all5:hover{
+    color: rgba(133, 26, 233, 0.877);
+}
+.icons-all6{
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+}
+.icons-all6:hover{
+    color: blue;
+}
+.artistic{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.548);
+    line-height: 1.5rem;
+}
+
+
+@media(max-width:768px) {
+    .container {
+        max-width: 768px;
+        padding-left: -115px;
+        padding-right: 15px;
+    }
+
+    /* .hamburger {
+        display: block;
+    }
+
+    .links a,
+    .right {
+        display: none;
+    } */
+    .news{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .studio{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .imago{
+        width: 600px;
+        height: 300px;
+    }
+    .source{
+        height: 800px;
+        flex-direction: column;
+    }
+    .industry{
+        height: max-content;
+        flex-direction: column;
+    }
+    .industry-pics{
+        flex-direction: column;
+    }
+    .people{
+        height: max-content;
+        flex-direction: column;
+    }
+    .people-pics{
+        flex-direction: column;
+    }
+    .pab>img{
+        width: 100%;
+        height: 100%;
+    }
+    .everything>h1{
+        font-size: 50px;
+    }
+    .flip-all{
+        display: flex;
+        gap: 10px;
+    }
+    .flip{
+        flex-direction: column;
+        gap: 100px;
+    }
+    .flip2{
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+    .create{
+        flex-direction: column;
+    }
+    .create>button{
+        margin-left: -290px;
+    }
+    .combine{
+        flex-direction: column;
+    }
+    .table-con{
+        display: flex;
+        /* padding: 100px; */
+        /* gap: 200px; */
+        /* flex-wrap: wrap; */
+    }
+}
+@media(max-width:325px) {
+    .container {
+        max-width: 768px;
+        margin-left: -115px;
+        padding-right: 15px;
+    }
+
+    /* .hamburger {
+        display: block;
+    }
+
+    .links a,
+    .right {
+        display: none;
+    } */
+    .news{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .studio{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .imago{
+        width: 600px;
+        height: 300px;
+    }
+    .source{
+        height: 800px;
+        flex-direction: column;
+    }
+    .industry{
+        height: max-content;
+        flex-direction: column;
+    }
+    .industry-pics{
+        flex-direction: column;
+    }
+    .people{
+        height: max-content;
+        flex-direction: column;
+    }
+    .people-pics{
+        flex-direction: column;
+    }
+    .pab>img{
+        width: 100%;
+        height: 100%;
+    }
+    .everything>h1{
+        font-size: 50px;
+    }
+    .flip-all{
+        display: flex;
+        gap: 10px;
+    }
+    .flip{
+        flex-direction: column;
+        gap: 100px;
+    }
+    .flip2{
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+    .create{
+        flex-direction: column;
+    }
+    .create>button{
+        margin-left: -290px;
+    }
+    .combine{
+        flex-direction: column;
+    }
+    .table-con{
+        display: flex;
+        /* padding: 100px; */
+        /* gap: 200px; */
+        flex-wrap: wrap;
+    }
+
+
+
+
